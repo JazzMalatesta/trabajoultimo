@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="hoja de estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos</title>
+    <link rel="icon" type="image/x-icon" href="ICONO.jpeg">
+</head>
+<body>
+    <header>
+        <img src="ICONO.jpeg" alt="">
+        <h1>Bienvenido a NBMJ viajes</h1>
+        <h1>Ofrecemos confianza y calidad</h1>
+     </header>
+     <nav>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <nav id="navbar" class="navbar order-last order-lg-0" style="margin-left: 28%;">
+            <ul>
+                <li><a href="NBMJ VIAJES.html">NBMJ VIAJES</a></li>
+                <li><a href="quienes somos.html">Quienes Somos</a></li>
+                <li><a href="VUELOs.html">Vuelos</a></li>
+                <li><a href="Alojamiento.html">Alojamientos</a></li>
+                <li><a href="recomendaciones .html">Recomendaciones</a></li>
+           
+              
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    <section>
+     <form>
+        <hr>
+       <h2>Vuelos</h2>
+       
+        <table>
+            <tr>
+                <td>Tipo de pasaje:</td>
+                <td><select name="clase" id="pasaje">
+                 <option value="ida">Ida</option>
+                 <option value="vuelta">Vuelta</option>
+             </select></td>
+            </tr>
+           <tr>
+            <td>Origen:</td>
+            <td><select name="desde" id="desde">
+             <option value="buenos aires">Buenos Aires</option>
+             <option value="cordoba">Córdoba</option>
+             <option value="san francisco">San Francisco</option>
+               <td>Destino:</td>
+               <td><select name="hasta" id="hasta">
+                <option value="españa">España</option>
+                <option value="italia">Italia</option>
+                <option value="eeuu">EEUU</option>
+            </select></td>
+               
+           </tr>
+           <tr>
+               <td>Día de Ida:</td>
+               <td><input type="date"  id="fecha" required></td>
+               <td>Día de regreso:</td>
+               <td><input type="date"  id="reg" required></td>
+           </tr>
+           <tr>
+               <td>Hora de salida:</td>
+               <td><input type="time" id="hora"  required></td>
+           </tr>
+           <tr>
+               <td>Clase:</td>
+               <td><select name="clase" id="clase">
+                <option value="Económica">Económica</option>
+                <option value="Primera Clase">Primera Clase</option>
+            </select></td>
+           </tr>
+           <tr>
+               <td>Personas:</td>
+               <td><input type="number" name="personas" id="personas" min="1" max="10" placeholder="Maximo 10"></td>
+           </tr>
+           <tr>
+            <td>Nombre y apellido:</td>
+            <td><input type="text" id="nombre"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+           
+            <tr>
+                <td>Celular:</td>
+                <td><input type="text" id="celular"></td>
+            </tr>
+            <tr>
+               <td>Cantidad de Menores:</td>
+               <td><input type="number" id="menores"></td>
+            <td>Cantidad de Mayores:</td>
+            <td><input type="number" id="mayores"></td>
+        </tr> 
+     
+       </table>
+       <button type="button" onclick="generar()">Generar Factura</button>
+       
+</form>
+<div id="imprimir"></div>
+
+<footer>
+    <p>
+    <h3 id="Contacto"></h3>
+    <h4>
+     <a href="https://wa.me/543564569326">
+        <img class="img" src="wpp_Logo.png" alt="Logo Whatsapp">
+        </a> </h4>
+    <h4>Instagram: NBMJ_VIAJES</h4>
+    <h4>Correo electronico: NBMJVIAJES@gmail.com </h4>
+    </p> 
+</footer>
+
+
+
+
+</body>
+<script src="java.js"></script>
+</html>
